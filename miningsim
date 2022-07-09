@@ -2054,7 +2054,7 @@ for i,v in pairs(supported_games) do
 end
 		end)
 		Tab:AddButton("Zeerox GUI", function()
-loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
 		end)
 		Tab:AddButton("NEW - Auto Fish", function()
 --Toggle
