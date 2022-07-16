@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Project Slayers", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(270, 130),
+		min_size = Vector2.new(270, 150),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2038,6 +2038,10 @@ do -- Example UI
 		Tab:AddButton("KeybrewHub - INFINITE LEVELS", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
 		end)
+		Tab:AddButton("OP - INFINITE SPINS + AUTO SPIN", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
+		end)
+		
 
 		
 
