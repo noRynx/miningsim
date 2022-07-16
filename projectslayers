@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Project Slayers", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(270, 200),
+		min_size = Vector2.new(270, 230),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2035,12 +2035,17 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra")
 
 		
-		Tab:AddButton("KeybrewHub - INFINITE LEVELS", function()
+		Tab:AddButton("#1 - KeybrewHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
 		end)
 		Tab:AddButton("OP - INFINITE SPINS + AUTO SPIN", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
 		end)
+		Tab:AddButton("Muzan ESP + Serverhop", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
+		end)
+		
+		
 		Tab:AddLabel("Get the script from the website")
 		Tab:AddLabel("to change what Clan you want")
 		
