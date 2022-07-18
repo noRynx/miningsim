@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Project Slayers", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(270, 250),
+		min_size = Vector2.new(270, 190),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2035,27 +2035,43 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra")
 
 		
-		Tab:AddButton("#1 - KeybrewHub", function()
+		Tab:AddButton("#1 - Lazy Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
+		end)
+		Tab:AddButton("KeybrewHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
 		end)
+		Tab:AddButton("Flare Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/new"))()
+		end)
+		
+		
+
+		
+
+	end
+		
+		Tab:Show()
+		
+	local Tab = Window:AddTab("Side")
+
+	do -- Elements
+		Tab:AddLabel("Thanks For Using Furk Ultra")
+
+		
 		Tab:AddButton("OP - INFINITE SPINS + AUTO SPIN", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
 		end)
 		Tab:AddButton("Muzan ESP + Serverhop", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
 		end)
-		Tab:AddButton("Flare Hub", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/new"))()
-		end)
+		Tab:AddLabel("More coming soon!")
 		
-		Tab:AddLabel("Get the script from the website")
-		Tab:AddLabel("to change what Clan you want")
 		
 
 		
 
 	end
 
-	Tab:Show()
 	library:FormatWindows()
 end
