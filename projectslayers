@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Project Slayers", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(270, 190),
+		min_size = Vector2.new(280, 190),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2059,11 +2059,13 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra")
 
 		
-		Tab:AddButton("OP - INFINITE SPINS + AUTO SPIN", function()
+		Tab:AddButton("Auto Spin 0.1% Clan (NOT INF SPINS)", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
 		end)
 		Tab:AddButton("Muzan ESP + Serverhop", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/slayerspins"))()
+			local cf = CFrame.new(game:GetService("Workspace").Muzan.SpawnPos.Value)
+local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(10), {CFrame = cf})                    
+tween:Play()
 		end)
 		Tab:AddLabel("More coming soon!")
 		
