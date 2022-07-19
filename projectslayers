@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Project Slayers", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(280, 190),
+		min_size = Vector2.new(280, 240),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2040,6 +2040,9 @@ do -- Example UI
 		end)
 		Tab:AddButton("KeybrewHub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
+		end)
+		Tab:AddButton("LeadMarker Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Scripts/main/ProjectSlayer.lua"))()
 		end)
 		Tab:AddButton("Ewyzu Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ewyzu/ewyzu-scripts/main/Project-Slayers"))()
