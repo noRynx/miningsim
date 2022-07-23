@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Mining Simulator 2", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(300, 210),
+		min_size = Vector2.new(300, 230),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2054,6 +2054,9 @@ for i,v in pairs(supported_games) do
 end
 		end)
 		Tab:AddButton("Zeerox GUI", function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
+		end)
+		Tab:AddButton("Zer0 Hub (has key)", function()
 loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
 		end)
 		Tab:AddButton("NEW - Auto Fish", function()
