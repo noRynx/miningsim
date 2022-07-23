@@ -2059,7 +2059,7 @@ loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main
 		Tab:AddButton("Zer0 Hub (has key)", function()
 loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
 		end)
-		Tab:AddButton("NEW - Auto Fish", function()
+		Tab:AddButton("Auto Fish", function()
 --Toggle
 getgenv().autoFish = true
 
