@@ -2025,7 +2025,7 @@ end
 do -- Example UI
 	local Window = library:AddWindow("Furk - Tatakai V2", {
 		main_color = Color3.fromRGB(0, 0, 0),
-		min_size = Vector2.new(270, 150),
+		min_size = Vector2.new(270, 180),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
@@ -2035,6 +2035,9 @@ do -- Example UI
 		Tab:AddLabel("Thanks For Using Furk Ultra")
 
 		
+		Tab:AddButton("#1 Mstir Hub", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/Mstirs-Utilities/main/Roblox/ScriptFetcher.lua"))()
+		end)
 		Tab:AddButton("Money Farm", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/Tatakai%20Money%20Farm"))()
 		end)
