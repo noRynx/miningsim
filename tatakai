@@ -2041,7 +2041,9 @@ do -- Example UI
 		Tab:AddButton("Money Farm", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/Tatakai%20Money%20Farm"))()
 		end)
-		Tab:AddButton("More coming soon")
+		Tab:AddButton("Auto Spin Best Clan", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/noRynx/miningsim/main/tatakaispin"))()
+		end)
 
 		
 
