@@ -2038,7 +2038,7 @@ do -- Example UI
 		Tab:AddButton("#1 - Lazy Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
 		end)
-		Tab:AddButton("Spotify Hub - INF WEN", function()
+		Tab:AddButton("Spotify Hub", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ewyzu/ewyzu-scripts/main/Project-Slayers"))()
 		end)
 		Tab:AddButton("KeybrewHub", function()
